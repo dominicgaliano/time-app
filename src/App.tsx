@@ -1,7 +1,13 @@
 import "./App.css";
+import { useState, useEffect } from "react";
+import dayjs from "dayjs";
 
 function App() {
-  const time = "12:00:00 PM GMT-7";
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    setTime(dayjs().format());
+  }, [time]);
 
   return <>The time is: {time}</>;
 }
