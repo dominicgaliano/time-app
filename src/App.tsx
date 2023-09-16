@@ -1,15 +1,15 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import dayjs from "dayjs";
+import dayjs, { Dayjs } from "dayjs";
 
 function App() {
-  const [time, setTime] = useState("");
+  const [time, setTime] = useState<Dayjs>(dayjs());
 
-  useEffect(() => {
-    setTime(dayjs().format());
-  }, [time]);
+  // useEffect(() => {
+  //   setTime(dayjs());
+  // }, [time]);
 
-  return <>The time is: {time}</>;
+  return <>The time is: {time.format()}</>;
 }
 
 export default App;
