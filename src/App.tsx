@@ -6,14 +6,17 @@ import timezone from "dayjs/plugin/timezone";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
+// Usage:
+// console.log(dayjs().tz("Asia/Taipei").format());
 
 function App() {
+  const [userTimezone, setUserTimezone] = useState(dayjs.tz.guess());
   const [time, setTime] = useState<Dayjs>(dayjs());
 
   useEffect(() => {
     // Update time every second
     const interval = setInterval(() => {
-      setTime(dayjs());
+      setTime(dayjs().tz(userTimezone));
     }, 1000);
 
     // cleanup on component unmount
@@ -22,7 +25,7 @@ function App() {
 
   return (
     <div className="container">
-      <h2>{dayjs.tz.guess()}</h2>
+      <h2>{userTimezone}</h2>
       <h1>{time.format("hh:mm:ss A")}</h1>
       <h2>{time.format("MMMM D, YYYY")}</h2>
     </div>
