@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     // Update time every second
     const interval = setInterval(() => {
-      setTime(dayjs().tz(userTimezone));
+      setTime(dayjs());
     }, 1000);
 
     // cleanup on component unmount
@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="container">
       <h2>{userTimezone}</h2>
-      <h1>{time.format("hh:mm:ss A")}</h1>
-      <h2>{time.format("MMMM D, YYYY")}</h2>
+      <h1>{time.tz(userTimezone).format("hh:mm:ss A")}</h1>
+      <h2>{time.tz(userTimezone).format("MMMM D, YYYY")}</h2>
     </div>
   );
 }
