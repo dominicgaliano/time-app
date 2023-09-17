@@ -3,6 +3,11 @@ import Select from "react-select";
 // timezones from file as Intl.supportedValuesOf('timeZone') does not work in react.
 import timezones from "./data/timezones.json";
 
+interface timezoneOption {
+  value: string;
+  label: string;
+}
+
 export default function TimezoneModal({ currentTimezone, setCurrentTimezone }) {
   const timezoneOptions = timezones.map((timezone) => {
     return {
@@ -11,7 +16,7 @@ export default function TimezoneModal({ currentTimezone, setCurrentTimezone }) {
     };
   });
 
-  const handleTimezoneChange = (option) => {
+  const handleTimezoneChange = (option: timezoneOption) => {
     setCurrentTimezone(option.value);
   };
 
