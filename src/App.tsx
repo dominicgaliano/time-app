@@ -28,7 +28,10 @@ function App() {
     <div className="container">
       <h2>
         {userTimezone}
-        <TimezoneModal />
+        <TimezoneModal
+          currentTimezone={userTimezone}
+          setCurrentTimezone={setUserTimezone}
+        />
       </h2>
       <h1>{time.tz(userTimezone).format("hh:mm:ss A")}</h1>
       <h2>{time.tz(userTimezone).format("MMMM D, YYYY")}</h2>
