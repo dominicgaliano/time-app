@@ -1,6 +1,6 @@
 import MicroModal from "react-micro-modal";
 // timezones from file as Intl.supportedValuesOf('timeZone') does not work in react.
-import * as timezones from "./timezones.json";
+import timezones from ".data/timezones.json";
 
 export default function TimezoneModal() {
   return (
