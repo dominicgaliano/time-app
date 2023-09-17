@@ -20,8 +20,8 @@ export default function TimezoneModal({
   });
 
   const onChange = (option) => {
-    if (option?.valueOf()) {
-      setCurrentTimezone(option!.valueOf());
+    if (option?.value) {
+      setCurrentTimezone(option!.value);
     }
   };
 
