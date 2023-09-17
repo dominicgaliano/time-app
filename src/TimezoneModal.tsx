@@ -1,28 +1,18 @@
 import MicroModal from "react-micro-modal";
-import Select, { ActionMeta } from "react-select";
+import Select from "react-select";
 // timezones from file as Intl.supportedValuesOf('timeZone') does not work in react.
 import timezones from "./data/timezones.json";
 
-type TimezoneOption = {
-  value: string;
-  label: string;
-};
-
 export default function TimezoneModal({ currentTimezone, setCurrentTimezone }) {
-  const timezoneOptions: readonly TimezoneOption[] = timezones.map(
-    (timezone) => {
-      return {
-        value: timezone,
-        label: timezone,
-      };
-    }
-  );
+  const timezoneOptions = timezones.map((timezone) => {
+    return {
+      value: timezone,
+      label: timezone,
+    };
+  });
 
-  const handleTimezoneChange = (
-    option: typeof Option | null,
-    actionMeta: ActionMeta<typeof Option>
-  ): void => {
-    setCurrentTimezone(option);
+  const handleTimezoneChange = (option) => {
+    setCurrentTimezone(option.value);
   };
 
   return (
@@ -31,7 +21,7 @@ export default function TimezoneModal({ currentTimezone, setCurrentTimezone }) {
         <button onClick={handleOpen}>Change Timezone</button>
       )}
       children={(handleClose) => (
-        <div>
+        <div style={{ width: "300px" }}>
           <label>Change Timezone</label>
           <Select
             value={currentTimezone}
