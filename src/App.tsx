@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import dayjs, { Dayjs } from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
+import TimezoneModal from "./TimezoneModal";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -25,7 +26,10 @@ function App() {
 
   return (
     <div className="container">
-      <h2>{userTimezone}</h2>
+      <h2>
+        {userTimezone}
+        <TimezoneModal />
+      </h2>
       <h1>{time.tz(userTimezone).format("hh:mm:ss A")}</h1>
       <h2>{time.tz(userTimezone).format("MMMM D, YYYY")}</h2>
     </div>
