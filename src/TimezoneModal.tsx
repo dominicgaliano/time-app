@@ -1,5 +1,5 @@
 import MicroModal from "react-micro-modal";
-import Select, { ActionMeta, SingleValue } from "react-select";
+import Select from "react-select";
 // timezones from file as Intl.supportedValuesOf('timeZone') does not work in react.
 import timezones from "./data/timezones.json";
 
