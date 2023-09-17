@@ -9,9 +9,15 @@ export default function TimezoneModal() {
         <button onClick={handleOpen}>Change Timezone</button>
       )}
       children={(handleClose) => (
-        <div>
-          <button onClick={handleClose}>Close!</button>
-        </div>
+        <form>
+          <label htmlFor="timezones">Change Timezone</label>
+          <select id="timezones" name="timezones">
+            {timezones.map((timezone) => (
+              <option value={timezone}>{timezone}</option>
+            ))}
+          </select>
+          <button onClick={handleClose}>Apply</button>
+        </form>
       )}
     />
   );
