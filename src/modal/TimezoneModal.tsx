@@ -41,7 +41,7 @@ export default function TimezoneModal({
         />
       )}
       children={(handleClose) => (
-        <div>
+        <>
           <h3>Change Timezone</h3>
           <Select
             value={currentTimezone}
@@ -60,11 +60,12 @@ export default function TimezoneModal({
           >
             Apply
           </button>
-        </div>
+        </>
       )}
       overrides={{
         Dialog: {
-          style: { overflow: "visible" },
+          className: "modal-container",
+          style: { overflow: "visible", color: "var(--global-text-black)" },
         },
       }}
     />
