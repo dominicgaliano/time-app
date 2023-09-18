@@ -41,7 +41,7 @@ export default function TimezoneModal({
         </svg>
       )}
       children={(handleClose) => (
-        <div style={{ width: "300px" }}>
+        <div>
           <label>Change Timezone</label>
           <Select
             value={currentTimezone}
