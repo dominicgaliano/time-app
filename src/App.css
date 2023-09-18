@@ -5,9 +5,12 @@
   text-align: center;
 }
 
+/* not sure if I should move this to TimezoneModal.css */
 .container__timezone {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  cursor: pointer;
 }
