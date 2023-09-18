@@ -59,6 +59,7 @@ export default function TimezoneModal({
             value={currentTimezone}
             options={timezoneOptions}
             onChange={onChange}
+            placeholder={currentTimezone}
           />
           <button onClick={handleClose}>Apply</button>
         </div>
