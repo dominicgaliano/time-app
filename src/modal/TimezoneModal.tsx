@@ -37,6 +37,7 @@ export default function TimezoneModal({
         <TimezoneSelector
           handleOpen={handleOpen}
           currentTimezone={currentTimezone}
+          setModalTimezone={setModalTimezone}
         />
       )}
       children={(handleClose) => (
@@ -63,8 +64,7 @@ export default function TimezoneModal({
       )}
       overrides={{
         Dialog: {
-          // replace
-          style: { backgroundColor: "grey", overflow: "visible" },
+          style: { overflow: "visible" },
         },
       }}
     />

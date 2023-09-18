@@ -3,18 +3,28 @@ import formatTimezoneString from "../utils/formatTimezoneString";
 interface Props {
   handleOpen: () => void;
   currentTimezone: string;
+  setModalTimezone: (modalTimezone: string) => void;
 }
 
 export default function TimezoneSelector({
   handleOpen,
   currentTimezone,
+  setModalTimezone,
 }: Props) {
   return (
     <div
       className="container__timezone"
-      onClick={handleOpen}
+      onClick={() => {
+        // set modal timezone
+        setModalTimezone(currentTimezone);
+
+        handleOpen();
+      }}
       onKeyDown={(e) => {
         if (e.key === "Enter") {
+          // set modal timezone
+          setModalTimezone(currentTimezone);
+
           handleOpen();
         }
       }}
