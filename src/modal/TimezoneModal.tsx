@@ -3,7 +3,7 @@ import Select from "react-select";
 import { useState } from "react";
 import "./TimezoneModal.css";
 // timezones from file as Intl.supportedValuesOf('timeZone') does not work in react.
-import timezones from "./data/timezones.json";
+import timezones from "../data/timezones.json";
 
 interface Props {
   currentTimezone: string;

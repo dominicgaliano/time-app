@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import dayjs, { Dayjs } from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
-import TimezoneModal from "./TimezoneModal";
+import TimezoneModal from "./modal/TimezoneModal";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
