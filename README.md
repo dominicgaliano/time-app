@@ -9,3 +9,4 @@ TODO:
 - Replace timezone button with symbol
   - Display symbol only on hover
 - Display timezone as formatted string
+- Fix TS type errors
