@@ -1,15 +1,3 @@
-# Clock App
-
-Static webpage that displays the current time.
-
-Features:
-
-- Allows user to select any valid (IANA timezone)[https://www.iana.org/time-zones].
-
-TODO:
-
-- Fix TS type errors (low priority, external package types that are not documented sufficiently. Code still runs (seemingly) correctly.)
-
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
 <a name="readme-top"></a>
@@ -45,10 +33,10 @@ TODO:
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">World Clock Static App</h3>
 
   <p align="center">
-    project_description
+    Static webpage that displays the current time in user's selected timezone.
     <br />
     <a href="https://github.com/dominicgaliano/time-app"><strong>Explore the docs »</strong></a>
     <br />
@@ -92,8 +80,6 @@ TODO:
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `dominicgaliano`, `time-app`, `twitter_handle`, `dominic-galiano`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,10 +144,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [ ] Feature 1
+- [x] Allows user to select any valid (IANA timezone)[https://www.iana.org/time-zones].
 - [ ] Feature 2
 - [ ] Feature 3
   - [ ] Nested Feature
+  - [ ] Fix TS type errors (low priority, external package types that are not documented sufficiently. Code still runs (seemingly) correctly.)
 
 See the [open issues](https://github.com/dominicgaliano/time-app/issues) for a full list of proposed features (and known issues).
 
