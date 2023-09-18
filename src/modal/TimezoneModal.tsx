@@ -25,7 +25,7 @@ export default function TimezoneModal({
     };
   });
 
-  const onChange = (option) => {
+  const onChange = (option) => { // @ts-ignore
     if (option?.value) {
       setModalTimezone(option!.value);
     }
@@ -46,7 +46,7 @@ export default function TimezoneModal({
           <div style={{ width: "300px" }}>
             <Select
               value={currentTimezone}
-              options={timezoneOptions}
+              options={timezoneOptions} // @ts-ignore
               onChange={onChange}
               placeholder={formatTimezoneString(modalTimezone)}
             />
