@@ -2,6 +2,7 @@ import MicroModal from "react-micro-modal";
 import Select from "react-select";
 import { useState } from "react";
 import "./TimezoneModal.css";
+import formatTimezoneString from "../utils/formatTimezoneString";
 // timezones from file as Intl.supportedValuesOf('timeZone') does not work in react.
 import timezones from "../data/timezones.json";
 
@@ -19,7 +20,7 @@ export default function TimezoneModal({
   const timezoneOptions = timezones.map((timezone) => {
     return {
       value: timezone,
-      label: timezone,
+      label: formatTimezoneString(timezone),
     };
   });
 
@@ -43,7 +44,7 @@ export default function TimezoneModal({
           role="button"
           tabIndex={0}
         >
-          <h2>{currentTimezone.replaceAll("_", " ").replaceAll("/", " - ")}</h2>
+          <h2>{formatTimezoneString(currentTimezone)}</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
