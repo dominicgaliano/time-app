@@ -43,12 +43,14 @@ export default function TimezoneModal({
       children={(handleClose) => (
         <>
           <h3>Change Timezone</h3>
-          <Select
-            value={currentTimezone}
-            options={timezoneOptions}
-            onChange={onChange}
-            placeholder={formatTimezoneString(modalTimezone)}
-          />
+          <div style={{ width: "300px" }}>
+            <Select
+              value={currentTimezone}
+              options={timezoneOptions}
+              onChange={onChange}
+              placeholder={formatTimezoneString(modalTimezone)}
+            />
+          </div>
           <button
             onClick={() => {
               // set app timezone
