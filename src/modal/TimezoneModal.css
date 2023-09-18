@@ -1,3 +1,17 @@
+/* not sure if I should move this to TimezoneModal.css */
+.container__timezone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.container__timezone:hover {
+    color: green;
+}
+
 .edit-icon {
     fill: currentColor;
     flex-shrink: 0;
