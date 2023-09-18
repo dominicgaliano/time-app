@@ -79,7 +79,7 @@ export default function TimezoneModal({
       overrides={{
         Dialog: {
           // replace
-          style: { backgroundColor: "grey" },
+          style: { backgroundColor: "grey", overflow: "visible" },
         },
       }}
     />
