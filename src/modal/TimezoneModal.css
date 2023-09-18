@@ -8,8 +8,8 @@
     cursor: pointer;
 }
 
-.container__timezone:hover {
-    color: green;
+.container__timezone:hover>.edit-icon {
+    display: block;
 }
 
 .edit-icon {
@@ -18,4 +18,6 @@
     /* Set height to em of h2, there is probably a better way to do this */
     height: 1.5em;
     width: 1.5em;
+
+    display: none;
 }
