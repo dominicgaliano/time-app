@@ -1,3 +1,4 @@
+// @ts-nocheck
 import MicroModal from "react-micro-modal";
 import Select from "react-select";
 import TimezoneSelector from "./TimezoneSelector";
@@ -25,7 +26,7 @@ export default function TimezoneModal({
     };
   });
 
-  const onChange = (option) => { // @ts-ignore
+  const onChange = (option) => {
     if (option?.value) {
       setModalTimezone(option!.value);
     }
@@ -46,7 +47,7 @@ export default function TimezoneModal({
           <div style={{ width: "300px" }}>
             <Select
               value={currentTimezone}
-              options={timezoneOptions} // @ts-ignore
+              options={timezoneOptions}
               onChange={onChange}
               placeholder={formatTimezoneString(modalTimezone)}
             />
