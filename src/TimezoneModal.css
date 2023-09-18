@@ -1,4 +1,8 @@
 .edit-icon {
     fill: currentColor;
     cursor: pointer;
+    flex-shrink: 0;
+    /* Set height to em of h2, there is probably a better way to do this */
+    height: 1.5em;
+    width: 1.5em;
 }
