@@ -8,5 +8,4 @@ TODO:
 - Fix timezone selection behavior (timezone selections are currently applied instantly).
 - Replace timezone button with symbol
   - Display symbol only on hover
-- Display timezone as formatted string
 - Fix TS type errors

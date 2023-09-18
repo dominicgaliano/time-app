@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="container">
       <h2>
-        {userTimezone}
+        {userTimezone.replace("_", " ")}
         <TimezoneModal
           currentTimezone={userTimezone}
           setCurrentTimezone={setUserTimezone}
