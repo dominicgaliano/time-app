@@ -43,7 +43,7 @@ export default function TimezoneModal({
           role="button"
           tabIndex={0}
         >
-          <h2>{currentTimezone.replaceAll("_", " ").replace("/", " - ")}</h2>
+          <h2>{currentTimezone.replaceAll("_", " ").replaceAll("/", " - ")}</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
