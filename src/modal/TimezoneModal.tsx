@@ -57,6 +57,10 @@ export default function TimezoneModal({
               // close modal
               handleClose();
             }}
+            style={{
+              backgroundColor: "#1a1a1a",
+              color: "var(--global-text-white)",
+            }}
           >
             Apply
           </button>
