@@ -54,7 +54,7 @@ export default function TimezoneModal({
       )}
       children={(handleClose) => (
         <div>
-          <label>Change Timezone</label>
+          <h3>Change Timezone</h3>
           <Select
             value={currentTimezone}
             options={timezoneOptions}
