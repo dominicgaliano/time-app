@@ -102,6 +102,6 @@ Don't forget to give the project a star! Thanks again!
 [license-url]: https://github.com/dominicgaliano/time-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/dominic-galiano
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/app1.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
