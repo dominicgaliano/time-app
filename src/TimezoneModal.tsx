@@ -51,6 +51,11 @@ export default function TimezoneModal({
           <button onClick={handleClose}>Apply</button>
         </div>
       )}
+      overrides={{
+        Dialog: {
+          style: { backgroundColor: "green" },
+        },
+      }}
     />
   );
 }
