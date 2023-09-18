@@ -30,7 +30,17 @@ export default function TimezoneModal({
   return (
     <MicroModal
       trigger={(handleOpen) => (
-        <div className="container__timezone" onClick={handleOpen}>
+        <div
+          className="container__timezone"
+          onClick={handleOpen}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleOpen();
+            }
+          }}
+          role="button"
+          tabIndex={0}
+        >
           <h2>{currentTimezone.replace("_", " ")}</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
