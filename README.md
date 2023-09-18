@@ -6,4 +6,5 @@ TODO:
 
 - Fix modal styles
 - Fix modal internal state issue
+- Modal changes width based on selected timezone
 - Fix TS type errors
