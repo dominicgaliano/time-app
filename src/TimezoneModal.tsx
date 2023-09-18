@@ -53,7 +53,8 @@ export default function TimezoneModal({
       )}
       overrides={{
         Dialog: {
-          style: { backgroundColor: "green" },
+          // replace
+          style: { backgroundColor: "grey" },
         },
       }}
     />
