@@ -26,13 +26,13 @@ function App() {
 
   return (
     <div className="container">
-      <h2>
-        {userTimezone.replace("_", " ")}
+      <div className="container__timezone">
+        <h2>{userTimezone.replace("_", " ")}</h2>
         <TimezoneModal
           currentTimezone={userTimezone}
           setCurrentTimezone={setUserTimezone}
         />
-      </h2>
+      </div>
       <h1>{time.tz(userTimezone).format("hh:mm:ss A")}</h1>
       <h2>{time.tz(userTimezone).format("MMMM D, YYYY")}</h2>
     </div>
