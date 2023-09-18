@@ -14,6 +14,8 @@ export default function TimezoneModal({
   currentTimezone,
   setCurrentTimezone,
 }: Props) {
+  const [modalTimezone, setModalTimezone] = useState(currentTimezone);
+
   const timezoneOptions = timezones.map((timezone) => {
     return {
       value: timezone,
@@ -23,7 +25,7 @@ export default function TimezoneModal({
 
   const onChange = (option) => {
     if (option?.value) {
-      setCurrentTimezone(option!.value);
+      setModalTimezone(option!.value);
     }
   };
 
@@ -59,9 +61,19 @@ export default function TimezoneModal({
             value={currentTimezone}
             options={timezoneOptions}
             onChange={onChange}
-            placeholder={currentTimezone}
+            placeholder={modalTimezone}
           />
-          <button onClick={handleClose}>Apply</button>
+          <button
+            onClick={() => {
+              // set app timezone
+              setCurrentTimezone(modalTimezone);
+
+              // close modal
+              handleClose();
+            }}
+          >
+            Apply
+          </button>
         </div>
       )}
       overrides={{
