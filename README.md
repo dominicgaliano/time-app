@@ -3,22 +3,18 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+![Top Tech][tech-shield]
+![GitHub Workflow Status (with event)][github-status-shield]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# World Clock Static App
+# Time App
 
 ## Description
 
-Static webpage that displays the current time in user's selected timezone.
+Time is a no-frills static web app built using React that displays the current time in a user's desired timezone. Click on the timezone to open a modal and select from all valid [IANA timezones](https://www.iana.org/time-zones). I built this web app to work on my front-end development skills using React, TS, CSS, and several external packages. Check out a demo [here](https://dominicgaliano.github.io/time-app/)!
 
-[![Product Name Screen Shot][product-screenshot]](https://dominicgaliano.github.io/time-app/)
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+<a href="https://dominicgaliano.github.io/time-app/"><img src="images/app1.png" alt="app main view" width="450px"/></a>
+<a href="https://dominicgaliano.github.io/time-app/"><img src="images/app2.png" alt="app timezone selection" width="450px"/></a>
 
 ## Installation
 
@@ -43,39 +39,25 @@ To run this project locally, follow the following commands (npm required):
    npm run dev
    ```
 
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
 ## Credits
 
+Frameworks and Packages:
+
 [![React][React.js]][React-url]
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+[![Typescript][Typescript.js]][Typescript-url]
+[![Vite][Vite.js]][Vite-url]
+[![DayJS][Day.js]][Dayjs-url]
+[![React-Micromodal][RMM.js]][React-micromodal-url]
+[![React-Select][RS.js]][react-select-url]
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.md` for more information.
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
 ## Features
 
-- Allows user to select any valid (IANA timezone)[https://www.iana.org/time-zones]
+- Fully accessible using keyboard, mouse, or touch.
+- Allows user to select any valid [IANA timezones](https://www.iana.org/time-zones)
 
 See the [open issues](https://github.com/dominicgaliano/time-app/issues) for a full list of proposed features (and known issues).
 
@@ -102,6 +84,17 @@ Don't forget to give the project a star! Thanks again!
 [license-url]: https://github.com/dominicgaliano/time-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/dominic-galiano
-[product-screenshot]: images/app1.png
+[tech-shield]: https://img.shields.io/github/languages/top/dominicgaliano/time-app.svg?style=for-the-badge
+[github-status-shield]: https://img.shields.io/github/actions/workflow/status/dominicgaliano/time-app/main.yml.svg?style=for-the-badge
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[Typescript.js]: https://shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=61DAFB
+[Typescript-url]: https://www.typescriptlang.org/
+[Vite.js]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
+[Vite-url]: https://vitejs.dev/
+[Day.js]: https://img.shields.io/badge/Day.js-20232A?style=for-the-badge
+[Dayjs-url]: https://day.js.org/
+[RMM.js]: https://img.shields.io/badge/react%20micro%20modal-20232A?style=for-the-badge
+[React-micromodal-url]: https://www.npmjs.com/package/react-micro-modal
+[RS.js]: https://img.shields.io/badge/react%20select-20232A?style=for-the-badge
+[react-select-url]: https://react-select.com/
