@@ -56,8 +56,12 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 
 ## Features
 
-- Fully accessible using keyboard, mouse, or touch.
 - Allows user to select any valid [IANA timezones](https://www.iana.org/time-zones)
+- Fully accessible using keyboard, mouse, or touch.
+- Responsive layout using flexbox and auto margin.
+- Supports all devices with width >320px (>98.5% of global users).
+- Supports both light and dark themes based on browser settings.
+- Clock and modal are fully accessible.
 
 See the [open issues](https://github.com/dominicgaliano/time-app/issues) for a full list of proposed features (and known issues).
 
