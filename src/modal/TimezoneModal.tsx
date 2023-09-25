@@ -57,6 +57,8 @@ export default function TimezoneModal({
               // set app timezone
               setCurrentTimezone(modalTimezone);
 
+              //
+
               // close modal
               handleClose();
             }}

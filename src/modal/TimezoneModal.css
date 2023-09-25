@@ -8,7 +8,11 @@
     cursor: pointer;
 }
 
-.container__timezone:hover>.edit-icon, .container__timezone:focus>.edit-icon {
+/* .container__timezone:hover>.edit-icon, .container__timezone:focus>.edit-icon {
+    display: block;
+} */
+
+.container__timezone:hover>.edit-icon {
     display: block;
 }
 
